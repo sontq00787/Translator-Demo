@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     var listCountriesAvaiable : [String]!
     
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var lblToCountry: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.title = "Home Screen";
         //fetch all countries available
         getListCountryAvailable()
         
@@ -25,6 +26,10 @@ class ViewController: UIViewController {
         var labelTap = UITapGestureRecognizer(target: self, action: "togglePicker")
         myLabel.userInteractionEnabled = true;
         myLabel.addGestureRecognizer(labelTap)
+        //set first value for myLabel
+        myLabel.text = listCountriesAvaiable[0]
+        
+        fillValueForLabels()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,10 +37,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: - Onload methods
     func togglePicker(){
         if ((cpicker) != nil) {
             cpicker.hidden = !cpicker.hidden
         }
+    }
+    
+    func fillValueForLabels(){
+        lblToCountry.text = NSLocalizedString("TO_COUNTRY", comment: "to country")
     }
     //MARK: - Fetch countries
     func getListCountryAvailable(){

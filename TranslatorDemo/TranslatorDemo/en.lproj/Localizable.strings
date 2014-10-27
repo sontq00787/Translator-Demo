@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TranslatorDemo
+
+  Created by SonTQ on 10/27/14.
+  Copyright (c) 2014 SYS Vietnam CoLtd. All rights reserved.
+*/
+
+//MARK: - HOME SCREEN
+HOME_TITLE = "Home Screen";
+FROM_COUNTRY = "From language";
+TO_COUNTRY = "To language";

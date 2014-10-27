@@ -1,0 +1,9 @@
+
+/* Class = "IBUITabBarItem"; title = "Second View"; ObjectID = "5ui-xw-G4M"; */
+"5ui-xw-G4M.title" = "Thanh 2";
+
+/* Class = "IBUITabBarItem"; title = "Home"; ObjectID = "7T4-6b-Rzo"; */
+"7T4-6b-Rzo.title" = "Màn hình chính";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "g0l-Qa-j96"; */
+"g0l-Qa-j96.text" = "Vietnamese";
